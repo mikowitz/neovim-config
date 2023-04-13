@@ -34,6 +34,23 @@ return {
           ]]
         }
       })
+
+      nmm.set({"zd", "za"}, "*.ex,*.exs", {
+        events = {"BufEnter"},
+        query = {
+          [[
+          ;; def*
+          ((identifier) @cap (#vim-match? @cap "^def"))
+          ((identifier) @cap (#vim-match? @cap "^describe"))
+          ((identifier) @cap (#vim-match? @cap "^test"))
+          ]], [[
+          ;; aliases, imports, uses
+          ((identifier) @cap (#vim-match? @cap "^alias"))
+          ((identifier) @cap (#vim-match? @cap "^import"))
+          ((identifier) @cap (#vim-match? @cap "^use"))
+          ]]
+        }
+      })
     end
   }
 }
