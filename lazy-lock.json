@@ -14,6 +14,8 @@
   "lazy.nvim": { "branch": "main", "commit": "57cce98dfdb2f2dd05a0567d89811e6d0505e13b" },
   "lualine.nvim": { "branch": "master", "commit": "84ffb80e452d95e2c46fa29a98ea11a240f7843e" },
   "neo-minimap": { "branch": "master", "commit": "263edc3ee8964949f8a2877c0e3bf706f9f172ff" },
+  "noice.nvim": { "branch": "main", "commit": "7bd435a48a2d2b3f028c633126e3f669ae6b902f" },
+  "nui.nvim": { "branch": "main", "commit": "ecd9def93891b9260b15b5fcef542eaabf4145c9" },
   "nvim-cmp": { "branch": "main", "commit": "777450fd0ae289463a14481673e26246b5e38bf2" },
   "nvim-hlslens": { "branch": "main", "commit": "5e3e9088fba7508cee3612ee50b14dfdd3ab19af" },
   "nvim-lsp-installer": { "branch": "main", "commit": "17e0bfa5f2c8854d1636fcd036dc8284db136baa" },
