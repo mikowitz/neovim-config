@@ -5,7 +5,7 @@ return {
     dependencies = {"MunifTanjim/nui.nvim"},
 
     config = function()
-      require"noice".setup({})
+      require"noice".setup({messages = { enabled = false }})
     end
   }
 }
