@@ -15,7 +15,7 @@ return {
           "ruby", "css", "html",
           "javascript", "tsx",
           "lua", "vim", "bash",
-          "markdown"
+          "markdown", "python"
         },
         rainbow = {enable = true},
         autotag = {

@@ -1,0 +1,5 @@
+return {
+  {
+    "sersorrel/vim-lilypond"
+  }
+}

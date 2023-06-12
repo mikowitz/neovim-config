@@ -51,6 +51,22 @@ return {
           ]]
         }
       })
+
+      nmm.set({"zd", "za"}, "*.py", {
+        events = {"BufEnter"},
+        query = {
+          [[
+          ;; functions
+          ((class_definition ) @cap)
+          ((function_definition ) @cap)
+          ]], [[
+          ;; aliases, imports, and uses
+          ((identifier) @cap (#vim-match? @cap "^alias"))
+          ((identifier) @cap (#vim-match? @cap "^import"))
+          ((identifier) @cap (#vim-match? @cap "^use"))
+          ]]
+        }
+      })
     end
   }
 }
