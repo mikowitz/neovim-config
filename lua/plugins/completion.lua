@@ -4,15 +4,17 @@ return {
 
     dependencies = {
       "hrsh7th/cmp-buffer",
-      "hrsh7th/cmp-path",
       "hrsh7th/cmp-nvim-lsp",
-      "saadparwaiz1/cmp_luasnip",
+      "hrsh7th/cmp-path",
       "L3MON4D3/LuaSnip",
+      "saadparwaiz1/cmp_luasnip",
+      "uga-rosa/cmp-dictionary",
     },
 
     config = function()
       local cmp = require("cmp")
       local luasnip = require("luasnip")
+      local dict = require("cmp_dictionary")
 
       require("luasnip/loaders/from_vscode").lazy_load()
 
@@ -49,6 +51,12 @@ return {
         TypeParameter = "",
       }
 
+      dict.switcher({
+        filetype = {
+          lilypond = { "/opt/homebrew/Cellar/lilypond/2.24.0_1/share/lilypond/2.24.0/vim/syntax/lilypond-words" }
+        }
+      })
+
       cmp.setup {
         snippet = {
           expand = function(args)
@@ -73,6 +81,7 @@ return {
               buffer = "[Buffer]",
               path = "[Path]",
               luasnip = "[Snippet]",
+              dictionary = "[Dictionary]",
             })[entry.source.name]
             return vim_item
           end,
@@ -82,6 +91,7 @@ return {
           { name = "buffer", },
           { name = "path" },
           { name = "luasnip" },
+          { name = "dictionary" },
         }
       }
     end
