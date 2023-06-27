@@ -11,7 +11,7 @@ return {
       }
 
       map("n", "<leader>w", ":HopWordMW<CR>", opts)
-      map("n", "<leader>l", ":HopLineMW<CR>", opts)
+      map("n", "<leader>l", ":HopLineStartMW<CR>", opts)
     end
   }
 }
