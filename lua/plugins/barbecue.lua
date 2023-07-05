@@ -9,7 +9,7 @@ return {
     },
 
     config = function()
-      require"barbecue".setup({
+      require "barbecue".setup({
         show_modified = true,
 
         symbols = {
@@ -30,31 +30,31 @@ return {
         },
 
         kinds = {
-          Text = "",
+          Text = "󰉿",
           Method = "m",
-          Function = "",
+          Function = "󰊕",
           Constructor = "",
           Field = "",
-          Variable = "",
-          Class = "",
+          Variable = "󰆧",
+          Class = "󰌗",
           Interface = "",
           Module = "",
           Property = "",
           Unit = "",
-          Value = "",
+          Value = "󰎠",
           Enum = "",
           Keyword = "",
           Snippet = "",
-          Color = "",
-          File = "",
+          Color = "󰏘",
+          File = "󰈙",
           Reference = "",
-          Folder = "",
+          Folder = "󰉋",
           EnumMember = "",
-          Constant = "",
+          Constant = "󰇽",
           Struct = "",
           Event = "",
-          Operator = "",
-          TypeParameter = "",
+          Operator = "󰆕",
+          TypeParameter = "󰊄",
         }
       })
     end
